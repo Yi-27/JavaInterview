@@ -30,7 +30,7 @@ public class VolatileDemo {
         for (int i = 0; i < 20; i++) {
 
             new Thread(() -> {
-                for (int j = 0; j <= 1000; j++) {
+                for (int j = 0; j < 1000; j++) {
                     myData.addPlusPlus();
                     myData.addAtomic();
                 }
