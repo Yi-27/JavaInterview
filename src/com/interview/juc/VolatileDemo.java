@@ -52,7 +52,7 @@ public class VolatileDemo {
         System.out.println(Thread.currentThread().getName() + "\t finally AtomicInteger value: " + myData.atomicInteger);
     }
 
-    // volatile可以保证可见性，及时通知其他线程，著物理内存的值已经被修改
+    // volatile可以保证可见性，及时通知其他线程，主物理内存的值已经被修改
     private static void seeOKByVolatile() {
         MyData myData = new MyData(); // 资源类
 
